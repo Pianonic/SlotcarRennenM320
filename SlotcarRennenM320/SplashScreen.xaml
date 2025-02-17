@@ -1,0 +1,43 @@
+﻿<Window x:Class="SlotcarRennenM320.SplashScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SlotcarRennenM320"
+        mc:Ignorable="d"
+        Background="Transparent"
+        Title="SplashScreen" Height="450" Width="800" WindowStyle="None" AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Label Content="Slotcar Rennen" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" Foreground="Aqua" />
+
+        <!-- The main container with lifted effect (shadow) -->
+        <Border CornerRadius="20" BorderBrush="White" BorderThickness="2" Background="#FF202020">
+            <Grid Margin="90,0,90,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="68*"/>
+                    <RowDefinition Height="81*"/>
+                </Grid.RowDefinitions>
+                <!-- Logo Image on the left -->
+                <Image x:Name="LogoImage" HorizontalAlignment="Left" VerticalAlignment="Top" Width="203" Height="204" Stretch="Uniform" Margin="-29,132,0,0" Grid.RowSpan="2">
+                    <Image.Source>
+                        <BitmapImage UriSource="/Images/car.png"/>
+                    </Image.Source>
+                </Image>
+
+                <!-- "BuccShop" Text on the right -->
+                <TextBlock x:Name="ShopText" Text="SlotCar" FontSize="110" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="193,136,0,0" Foreground="White" Grid.RowSpan="2"/>
+
+                <!-- Author Text -->
+                <TextBlock x:Name="AuthorText" Text="The Ultimate SlotCar Simulator" FontSize="24" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="197,58,0,0" Foreground="White" Grid.Row="1"/>
+
+                <TextBlock Text="Creators: Niclas, Simon" 
+                   FontSize="12" FontWeight="SemiBold" 
+                   VerticalAlignment="Top" HorizontalAlignment="Center" 
+                   Margin="0,216,0,0" Foreground="LightGray" Opacity="0.8" Grid.Row="1">
+                </TextBlock>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

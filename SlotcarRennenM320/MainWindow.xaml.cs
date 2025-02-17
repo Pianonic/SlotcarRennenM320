@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using SlotcarRennenM320.ViewMoldes;
+using SlotcarRennenM320.Views;
+using System.Windows;
 
 namespace SlotcarRennenM320
 {
@@ -7,9 +9,12 @@ namespace SlotcarRennenM320
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(MainWindowViewModel mainWindowViewModel)
         {
             InitializeComponent();
+            DataContext = mainWindowViewModel;
+            mainWindowViewModel.SetContentFrame(ContentFrame);
+            mainWindowViewModel.NavigateTo(new MainMenuView(new MainMenuViewModel(mainWindowViewModel)));
         }
     }
 }
