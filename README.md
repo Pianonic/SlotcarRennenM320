@@ -16,3 +16,6 @@ Das **Slotcar Rennen M320** ist ein lokales Multiplayer-Spiel, bei dem zwei Spie
 - **Eventhandling** für präzise Steuerung im Multiplayer-Modus
 
 Bleib am Gas und viel Erfolg auf der Strecke! 💨🏎️
+
+---
+Made with ❤ by Niclas & Simon
