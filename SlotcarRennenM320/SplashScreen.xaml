@@ -26,7 +26,7 @@
                     </Image.Source>
                 </Image>
 
-                <!-- "BuccShop" Text on the right -->
+                <!-- "SlotCar" Text on the right -->
                 <TextBlock x:Name="ShopText" Text="SlotCar" FontSize="110" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="193,136,0,0" Foreground="White" Grid.RowSpan="2"/>
 
                 <!-- Author Text -->
