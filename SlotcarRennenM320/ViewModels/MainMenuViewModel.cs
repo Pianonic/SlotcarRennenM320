@@ -1,4 +1,5 @@
-﻿using SlotcarRennenM320.Views;
+﻿using SlotcarRennenM320.Commands;
+using SlotcarRennenM320.Views;
 using System.ComponentModel;
 using System.Windows;
 using System.Windows.Input;
@@ -18,16 +19,16 @@ namespace SlotcarRennenM320.ViewModels
         {
             _mainWindowViewModel = mainWindowViewModel;
 
-            StartGameCommand = new DelegateCommand(OnStartGame);
-            QuitCommand = new DelegateCommand(OnQuit);
+            StartGameCommand = new DelegateCommand(_ => OnStartGame());
+            QuitCommand = new DelegateCommand(_ => OnQuit());
         }
 
-        private void OnStartGame(object parameter)
+        private void OnStartGame()
         {
             _mainWindowViewModel.NavigateTo(new GameView(new GameViewModel()));
         }
 
-        private void OnQuit(object parameter)
+        private void OnQuit()
         {
             Application.Current.Shutdown();
         }

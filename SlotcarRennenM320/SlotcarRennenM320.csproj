@@ -10,13 +10,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Tracks\default.xml" />
     <None Remove="Images\BG.png" />
     <None Remove="Images\car-icon.ico" />
     <None Remove="Images\car.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
+    <Resource Include="Assets\Tracks\default.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Icon\" />
   </ItemGroup>
 

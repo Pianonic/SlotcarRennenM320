@@ -1,8 +1,11 @@
 ﻿<Application x:Class="SlotcarRennenM320.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:SlotcarRennenM320">
+             xmlns:local="clr-namespace:SlotcarRennenM320"
+             xmlns:converters="clr-namespace:SlotcarRennenM320.Converters">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <converters:OrientationToVisibilityConverter x:Key="OrientationToVisibilityConverter"/>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

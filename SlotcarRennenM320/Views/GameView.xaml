@@ -4,44 +4,52 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SlotcarRennenM320.Views"
+      xmlns:converters="clr-namespace:SlotcarRennenM320.Converters"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Game">
 
-    <Grid>
-        <ItemsControl ItemsSource="{Binding Track}">
+    <Page.Resources>
+        <converters:OrientationToVisibilityConverter x:Key="OrientationToVisibilityConverter"/>
+    </Page.Resources>
+
+    <Grid Background="#1E1E1E">
+        <ItemsControl ItemsSource="{Binding Track}" 
+                    HorizontalAlignment="Stretch" 
+                    VerticalAlignment="Stretch">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <UniformGrid Columns="10" Rows="15"/>
+                    <UniformGrid Rows="{Binding Track.Count}" 
+                               HorizontalAlignment="Stretch" 
+                               VerticalAlignment="Stretch"/>
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
-
+            
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <Grid Width="60" Height="60">
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-
-                            <!-- Yellow Dots (Corners) -->
-                            <Ellipse Fill="Yellow" Width="5" Height="5" Grid.Row="0" Grid.Column="0"/>
-                            <Ellipse Fill="Yellow" Width="5" Height="5" Grid.Row="0" Grid.Column="2"/>
-                            <Ellipse Fill="Yellow" Width="5" Height="5" Grid.Row="2" Grid.Column="0"/>
-                            <Ellipse Fill="Yellow" Width="5" Height="5" Grid.Row="2" Grid.Column="2"/>
-
-                            <!-- Middle Dot (Conditional) -->
-                            <Ellipse Fill="Yellow" Width="7" Height="7" Grid.Row="1" Grid.Column="1"
-                                     Visibility="{Binding IngoingOrientation, Converter={StaticResource OrientationToVisibilityConverter}}"/>
-                        </Grid>
-                    </Grid>
+                    <ItemsControl ItemsSource="{Binding}" 
+                                HorizontalAlignment="Stretch" 
+                                VerticalAlignment="Stretch">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <UniformGrid Columns="{Binding Count}" 
+                                           HorizontalAlignment="Stretch" 
+                                           VerticalAlignment="Stretch"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border BorderBrush="Red" BorderThickness="1"
+                                        HorizontalAlignment="Stretch" 
+                                        VerticalAlignment="Stretch">
+                                    <Grid Background="#333333"
+                                          HorizontalAlignment="Stretch" 
+                                          VerticalAlignment="Stretch"/>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>

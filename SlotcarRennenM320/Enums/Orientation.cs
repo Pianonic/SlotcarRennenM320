@@ -2,6 +2,7 @@
 {
     public enum Orientation
     {
+        None,
         Top,
         Bottom,
         Left,
