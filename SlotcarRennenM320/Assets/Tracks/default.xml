@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Track>
   <Rows>
-    <!-- Row 0-1: Empty -->
+    <!-- Row 0 -->
     <Row>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
@@ -14,50 +17,187 @@
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
     </Row>
+    <!-- Row 1 -->
     <Row>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
-      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
-      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
-      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
-      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
-      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
-      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
-      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
-    </Row>
-    <!-- Row 2: Top straight with curves -->
-    <Row>
-      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
-      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
-      <Node IngoingOrientation="Right" OutgoingOrientation="Bottom"/>
-      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Bottom" OutgoingOrientation="Right"/>
       <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
       <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
       <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
       <Node IngoingOrientation="Left" OutgoingOrientation="Bottom"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
     </Row>
-    <!-- Rows 3-11: Vertical sections -->
+    <!-- Row 2 -->
     <Row>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
-      <Node IngoingOrientation="Top" OutgoingOrientation="Bottom"/>
-      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
-      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
-      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
       <Node IngoingOrientation="Top" OutgoingOrientation="Bottom"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="Top" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Bottom"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
     </Row>
-    <!-- (Repeat similar vertical section rows) -->
-    <!-- Row 12: Bottom straight with curves -->
+    <!-- Row 3 -->
+    <Row>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="Bottom" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Top" OutgoingOrientation="Left"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="Top" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Bottom"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+    </Row>
+    <!-- Row 4 -->
+    <Row>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="Top" OutgoingOrientation="Bottom"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="Top" OutgoingOrientation="Bottom"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+    </Row>
+    <!-- Row 5 -->
+    <Row>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="Top" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Bottom"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="Bottom" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Bottom"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="Top" OutgoingOrientation="Bottom"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+    </Row>
+    <!-- Row 6 -->
     <Row>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
       <Node IngoingOrientation="Top" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Top" OutgoingOrientation="Left"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="Top" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Bottom"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="Top" OutgoingOrientation="Bottom"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+    </Row>
+    <!-- Row 7 -->
+    <Row>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="Top" OutgoingOrientation="Bottom"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="Top" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Bottom"/>
+    </Row>
+    <!-- Row 8 -->
+    <Row>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="Top" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Bottom" OutgoingOrientation="Left"/>
+      <Node IngoingOrientation="Top" OutgoingOrientation="Bottom"/>
+    </Row>
+    <!-- Row 9 -->
+    <Row>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="Bottom" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Top"/>
+      <Node IngoingOrientation="Top" OutgoingOrientation="Bottom"/>
+    </Row>
+    <!-- Row 10 -->
+    <Row>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="Bottom" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Top"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="Bottom" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Top" OutgoingOrientation="Left"/>
+    </Row>
+    <!-- Row 11 -->
+    <Row>
+      <Node IngoingOrientation="Bottom" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Top"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="Top" OutgoingOrientation="Bottom"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+    </Row>
+    <!-- Row 12 -->
+    <Row>
+      <Node IngoingOrientation="Top" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
+      <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
       <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
       <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
       <Node IngoingOrientation="Left" OutgoingOrientation="Right"/>
@@ -65,21 +205,15 @@
       <Node IngoingOrientation="Top" OutgoingOrientation="Left"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
-    </Row>
-    <!-- Rows 13-14: Empty -->
-    <Row>
-      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
-      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
-      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
-      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
-      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
-      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
-      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
     </Row>
+    <!-- Row 13 -->
     <Row>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
+      <Node IngoingOrientation="None" OutgoingOrientation="None"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
@@ -92,4 +226,4 @@
       <Node IngoingOrientation="None" OutgoingOrientation="None"/>
     </Row>
   </Rows>
-</Track> 
+</Track>

@@ -1,3 +1,4 @@
+using SlotcarRennenM320.DataClasses;
 using SlotcarRennenM320.Enums;
 using System.Globalization;
 using System.Windows;
@@ -9,14 +10,14 @@ namespace SlotcarRennenM320.Converters
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (value is Orientation orientation && parameter is string direction)
+            if (value is TrackNode node && parameter is string direction)
             {
                 bool isVisible = direction switch
                 {
-                    "Top" => orientation == Orientation.Top,
-                    "Right" => orientation == Orientation.Right,
-                    "Bottom" => orientation == Orientation.Bottom,
-                    "Left" => orientation == Orientation.Left,
+                    "Top" => node.IngoingOrientation == Orientation.Top || node.OutgoingOrientation == Orientation.Top,
+                    "Right" => node.IngoingOrientation == Orientation.Right || node.OutgoingOrientation == Orientation.Right,
+                    "Bottom" => node.IngoingOrientation == Orientation.Bottom || node.OutgoingOrientation == Orientation.Bottom,
+                    "Left" => node.IngoingOrientation == Orientation.Left || node.OutgoingOrientation == Orientation.Left,
                     _ => false
                 };
 

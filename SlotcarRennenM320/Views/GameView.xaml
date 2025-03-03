@@ -54,19 +54,19 @@
 
                                         <!-- Top connection -->
                                         <Rectangle Grid.Row="0" Grid.Column="1" Fill="Yellow"
-                                                 Visibility="{Binding IngoingOrientation, Converter={StaticResource OrientationToVisibilityConverter}, ConverterParameter=Top}"/>
+                                                 Visibility="{Binding ., Converter={StaticResource OrientationToVisibilityConverter}, ConverterParameter=Top}"/>
 
                                         <!-- Right connection -->
                                         <Rectangle Grid.Row="1" Grid.Column="2" Fill="Yellow"
-                                                 Visibility="{Binding OutgoingOrientation, Converter={StaticResource OrientationToVisibilityConverter}, ConverterParameter=Right}"/>
+                                                 Visibility="{Binding ., Converter={StaticResource OrientationToVisibilityConverter}, ConverterParameter=Right}"/>
 
                                         <!-- Bottom connection -->
                                         <Rectangle Grid.Row="2" Grid.Column="1" Fill="Yellow"
-                                                 Visibility="{Binding OutgoingOrientation, Converter={StaticResource OrientationToVisibilityConverter}, ConverterParameter=Bottom}"/>
+                                                 Visibility="{Binding ., Converter={StaticResource OrientationToVisibilityConverter}, ConverterParameter=Bottom}"/>
 
                                         <!-- Left connection -->
                                         <Rectangle Grid.Row="1" Grid.Column="0" Fill="Yellow"
-                                                 Visibility="{Binding IngoingOrientation, Converter={StaticResource OrientationToVisibilityConverter}, ConverterParameter=Left}"/>
+                                                 Visibility="{Binding ., Converter={StaticResource OrientationToVisibilityConverter}, ConverterParameter=Left}"/>
                                     </Grid>
                                 </Border>
                             </DataTemplate>
