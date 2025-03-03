@@ -2,7 +2,7 @@
 # <p align="center">Slotcar Rennen M320</p>
 
 <p align="center">
-  <img src="https://example.com/logo.png" width="200" alt="Slotcar Rennen M320 Logo">
+  <img src="https://github.com/user-attachments/assets/296d22d0-579d-444b-9abb-68684af494e7" width="200" alt="Slotcar Rennen M320 Logo">
 </p>
 
 <p align="center">
@@ -29,8 +29,11 @@
 ## 📸 Screenshots
 
 <p align="center">
-  <img src=".\assets\startpage.png" width="1000" alt="Slotcar Rennen M320 Screenshot">
+  <img src="https://github.com/user-attachments/assets/da88d9fa-7edf-4808-8400-07be829c5e77" width="1000" alt="Slotcar Rennen M320 Screenshot">
+  <img src="https://github.com/user-attachments/assets/e31af623-e9c2-4165-be34-7c8117c0d31c" width="1000" alt="Slotcar Rennen M320 Screenshot">
+  <img src="https://github.com/user-attachments/assets/41bfafce-5ddd-4b40-a1e1-23f414392161" width="1000" alt="Slotcar Rennen M320 Screenshot">
 </p>
+
 
 ## 💻 Entwicklungsumgebung
 - Git
