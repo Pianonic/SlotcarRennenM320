@@ -18,6 +18,10 @@
 
 ---
 
+<p align="center">
+  <a href="https://github.com/Pianonic/SlotcarRennenM320/blob/main/docs/Projektplanung.md">Projektplanung Dokumentation</a>
+</p>
+
 ## 🚀 Features
 
 - 🏎️ **Lokaler Multiplayer**: Zwei Spieler steuern ihre Fahrzeuge per Tastendruck
@@ -38,10 +42,6 @@
 ## 💻 Entwicklungsumgebung
 - Git
 - .NET 8 SDK
-
-<p align="center">
-  <a href="https://github.com/Pianonic/SlotcarRennenM320/blob/main/docs/Projektplanung.md">Projektplanung Dokumentation</a>
-</p>
 
 ---
 
