@@ -39,6 +39,10 @@
 - Git
 - .NET 8 SDK
 
+<p align="center">
+  <a href="https://github.com/Pianonic/SlotcarRennenM320/blob/main/docs/Projektplanung.md">Projektplanung Dokumentation</a>
+</p>
+
 ---
 
 <p align="center">Made with ❤️ by Niclas & Simon</p>
