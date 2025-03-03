@@ -11,6 +11,7 @@
 
     <Page.Resources>
         <converters:OrientationToVisibilityConverter x:Key="OrientationToVisibilityConverter"/>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
     </Page.Resources>
 
     <Grid Background="#1E1E1E">
@@ -19,33 +20,54 @@
                     VerticalAlignment="Stretch">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <UniformGrid Rows="{Binding Track.Count}" 
-                               HorizontalAlignment="Stretch" 
-                               VerticalAlignment="Stretch"/>
+                    <UniformGrid Rows="{Binding Track.Count}"/>
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
             
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <ItemsControl ItemsSource="{Binding}" 
-                                HorizontalAlignment="Stretch" 
-                                VerticalAlignment="Stretch">
+                    <ItemsControl ItemsSource="{Binding}">
                         <ItemsControl.ItemsPanel>
                             <ItemsPanelTemplate>
-                                <UniformGrid Columns="{Binding Count}" 
-                                           HorizontalAlignment="Stretch" 
-                                           VerticalAlignment="Stretch"/>
+                                <UniformGrid Columns="{Binding Count}"/>
                             </ItemsPanelTemplate>
                         </ItemsControl.ItemsPanel>
                         
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
-                                <Border BorderBrush="Red" BorderThickness="1"
-                                        HorizontalAlignment="Stretch" 
-                                        VerticalAlignment="Stretch">
-                                    <Grid Background="#333333"
-                                          HorizontalAlignment="Stretch" 
-                                          VerticalAlignment="Stretch"/>
+                                <Border BorderBrush="Red" BorderThickness="1">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <!-- Center square (visible only if track piece is active) -->
+                                        <Rectangle Grid.Row="1" Grid.Column="1" Fill="Yellow"
+                                                   Visibility="{Binding IsActive, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+
+                                        <!-- Top connection -->
+                                        <Rectangle Grid.Row="0" Grid.Column="1" Fill="Yellow"
+                                                 Visibility="{Binding IngoingOrientation, Converter={StaticResource OrientationToVisibilityConverter}, ConverterParameter=Top}"/>
+
+                                        <!-- Right connection -->
+                                        <Rectangle Grid.Row="1" Grid.Column="2" Fill="Yellow"
+                                                 Visibility="{Binding OutgoingOrientation, Converter={StaticResource OrientationToVisibilityConverter}, ConverterParameter=Right}"/>
+
+                                        <!-- Bottom connection -->
+                                        <Rectangle Grid.Row="2" Grid.Column="1" Fill="Yellow"
+                                                 Visibility="{Binding OutgoingOrientation, Converter={StaticResource OrientationToVisibilityConverter}, ConverterParameter=Bottom}"/>
+
+                                        <!-- Left connection -->
+                                        <Rectangle Grid.Row="1" Grid.Column="0" Fill="Yellow"
+                                                 Visibility="{Binding IngoingOrientation, Converter={StaticResource OrientationToVisibilityConverter}, ConverterParameter=Left}"/>
+                                    </Grid>
                                 </Border>
                             </DataTemplate>
                         </ItemsControl.ItemTemplate>

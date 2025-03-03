@@ -1,5 +1,4 @@
 using SlotcarRennenM320.Enums;
-using System;
 using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
@@ -10,10 +9,20 @@ namespace SlotcarRennenM320.Converters
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (value is Orientation orientation)
+            if (value is Orientation orientation && parameter is string direction)
             {
-                return orientation != default(Orientation) ? Visibility.Visible : Visibility.Collapsed;
+                bool isVisible = direction switch
+                {
+                    "Top" => orientation == Orientation.Top,
+                    "Right" => orientation == Orientation.Right,
+                    "Bottom" => orientation == Orientation.Bottom,
+                    "Left" => orientation == Orientation.Left,
+                    _ => false
+                };
+
+                return isVisible ? Visibility.Visible : Visibility.Collapsed;
             }
+
             return Visibility.Collapsed;
         }
 
@@ -22,4 +31,4 @@ namespace SlotcarRennenM320.Converters
             throw new NotImplementedException();
         }
     }
-} 
+}
