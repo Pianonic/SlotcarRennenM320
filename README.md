@@ -3,6 +3,8 @@
 ## 📌 Projektübersicht
 Das **Slotcar Rennen M320** ist ein lokales Multiplayer-Spiel, bei dem zwei Spieler auf einer virtuellen Rennstrecke gegeneinander antreten. Die Steuerung erfolgt über eine Taste pro Spieler zum Beschleunigen. Eine Physikengine simuliert das Fahrverhalten, sodass Autos bei zu hoher Geschwindigkeit aus der Strecke fliegen können.
 
+![Aktuelle Rennstrecke](docs/images/track.png)
+
 ## 🚗 Features
 - **🏎️ Lokaler Multiplayer**: Zwei Spieler steuern ihre Fahrzeuge per Tastendruck
 - **⚙️ Physiksystem**: Simulation von Geschwindigkeit und Zentrifugalkraft in Kurven
@@ -14,6 +16,9 @@ Das **Slotcar Rennen M320** ist ein lokales Multiplayer-Spiel, bei dem zwei Spie
 - **WPF (.NET 8)** für die Benutzeroberfläche
 - **Einfache Physik-Engine** für realistisches Fahrverhalten
 - **Eventhandling** für präzise Steuerung im Multiplayer-Modus
+
+## 📋 Projektplanung
+Die detaillierte Projektplanung mit aktuellem Implementierungsstand finden Sie hier: [Projektplanung](docs/Projektplanung.md)
 
 Bleib am Gas und viel Erfolg auf der Strecke! 💨🏎️
 
