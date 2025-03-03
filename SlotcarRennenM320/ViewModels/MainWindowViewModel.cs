@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Windows.Controls;
 
-namespace SlotcarRennenM320.ViewMoldes
+namespace SlotcarRennenM320.ViewModels
 {
     public class MainWindowViewModel : INotifyPropertyChanged
     {

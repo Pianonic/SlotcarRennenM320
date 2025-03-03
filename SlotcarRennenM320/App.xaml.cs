@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using SlotcarRennenM320.ViewMoldes;
-using SlotcarRennenM320.ViewMoldes.SlotcarRennenM320.ViewMoldes;
+using SlotcarRennenM320.ViewModels;
+using SlotcarRennenM320.ViewModels.SlotcarRennenM320.ViewMoldes;
 using SlotcarRennenM320.Views;
 using System.IO;
 

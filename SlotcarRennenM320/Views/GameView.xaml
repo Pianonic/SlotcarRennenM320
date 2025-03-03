@@ -9,6 +9,41 @@
       Title="Game">
 
     <Grid>
-        
+        <ItemsControl ItemsSource="{Binding Track}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="10" Rows="15"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Width="60" Height="60">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <!-- Yellow Dots (Corners) -->
+                            <Ellipse Fill="Yellow" Width="5" Height="5" Grid.Row="0" Grid.Column="0"/>
+                            <Ellipse Fill="Yellow" Width="5" Height="5" Grid.Row="0" Grid.Column="2"/>
+                            <Ellipse Fill="Yellow" Width="5" Height="5" Grid.Row="2" Grid.Column="0"/>
+                            <Ellipse Fill="Yellow" Width="5" Height="5" Grid.Row="2" Grid.Column="2"/>
+
+                            <!-- Middle Dot (Conditional) -->
+                            <Ellipse Fill="Yellow" Width="7" Height="7" Grid.Row="1" Grid.Column="1"
+                                     Visibility="{Binding IngoingOrientation, Converter={StaticResource OrientationToVisibilityConverter}}"/>
+                        </Grid>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
     </Grid>
 </Page>

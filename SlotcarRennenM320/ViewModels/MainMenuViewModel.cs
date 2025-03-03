@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Windows;
 using System.Windows.Input;
 
-namespace SlotcarRennenM320.ViewMoldes
+namespace SlotcarRennenM320.ViewModels
 {
     public class MainMenuViewModel : INotifyPropertyChanged
     {
@@ -24,7 +24,7 @@ namespace SlotcarRennenM320.ViewMoldes
 
         private void OnStartGame(object parameter)
         {
-            _mainWindowViewModel.NavigateTo(new GameView());
+            _mainWindowViewModel.NavigateTo(new GameView(new GameViewModel()));
         }
 
         private void OnQuit(object parameter)

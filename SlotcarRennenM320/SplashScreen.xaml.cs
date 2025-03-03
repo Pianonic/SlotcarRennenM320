@@ -1,4 +1,4 @@
-﻿using SlotcarRennenM320.ViewMoldes.SlotcarRennenM320.ViewMoldes;
+﻿using SlotcarRennenM320.ViewModels.SlotcarRennenM320.ViewMoldes;
 using System.Windows;
 
 namespace SlotcarRennenM320

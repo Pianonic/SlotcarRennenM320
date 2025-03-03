@@ -1,4 +1,4 @@
-﻿namespace SlotcarRennenM320.ViewMoldes
+﻿namespace SlotcarRennenM320.ViewModels
 {
     using System.ComponentModel;
 
