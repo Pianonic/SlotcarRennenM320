@@ -9,25 +9,13 @@ Das **Slotcar Rennen M320** ist ein lokales Multiplayer-Spiel, bei dem zwei Spie
 - **📊 KMH-Anzeige**: Geschwindigkeit wird visuell dargestellt, mit Farbcodierung für sichere & gefährliche Bereiche
 - **🎯 Punktesystem**: Punkte für abgeschlossene Runden & Bonuspunkte für Bestzeiten
 - **🖥️ GUI mit WPF & MVVM**: Klare Trennung von Logik und Benutzeroberfläche
-- **🔧 Anpassbare Fahrzeuge**: Verschiedene Geschwindigkeits- und Handling-Einstellungen
-- **🏗️ Automatische Streckengenerierung**: Algorithmen erzeugen unterschiedliche Streckenlayouts
 
 ## 🔍 Technologien
 - **WPF (.NET 8)** für die Benutzeroberfläche
 - **Einfache Physik-Engine** für realistisches Fahrverhalten
 - **Eventhandling** für präzise Steuerung im Multiplayer-Modus
 
-## 🏆 Events & Turniere
-Regelmässig finden **M320 Meisterschaften** statt:
-- 🎉 **Wöchentliche Rennen** mit lokalen Teilnehmern
-- 🏁 **Saisonmeisterschaften** für die Besten der Besten
-- 🔥 **Spezial-Events** mit einzigartigen Herausforderungen
-
-## 🚀 Werde Teil der Community!
-Möchtest du mitmachen?
-- 📋 **Registriere dich für das nächste Rennen**
-- 🤝 **Tausche dich mit anderen Fahrern aus**
-- 🔧 **Tune dein Fahrzeug für den ultimativen Speed**
-
 Bleib am Gas und viel Erfolg auf der Strecke! 💨🏎️
 
+---
+Made with ❤ by Niclas & Simon
